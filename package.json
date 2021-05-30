@@ -1,0 +1,28 @@
+{
+  "name": "testes-tdd",
+  "version": "1.0.0",
+  "description": "Investtools tests activity",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilhermefari/TDD.git"
+  },
+  "keywords": [
+    "tests",
+    "js",
+    "tdd"
+  ],
+  "author": "Guilherme Fonseca <guilhermefaria2116@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guilhermefari/TDD/issues"
+  },
+  "homepage": "https://github.com/guilhermefari/TDD#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0"
+  }
+}
