@@ -25,4 +25,16 @@ describe('Testes', function(){
     it('O objeto { attr3: 13 } não possui o atributo attr1', function(){
         assert.doesNotHaveAnyKeys({ attr3: 13}, 'attr1');
     });
+
+    it('/([Invesstools])/ realiza match com \'Não existe concorrente com a Investtools para a melhor empresa para se estagiar\'', function(){
+        assert.match('Não existe concorrente com a Investtools para a melhor empresa para se estagiar', /([Investools])/);
+    });
+
+    it('/([Invesstools])/ realiza match com \'Investtools cuida melhor dos seus estagiários que a bloomberg.\'', function(){
+        assert.match('Investtools cuida melhor dos seus estagiários quea bloomberg.', /([Investools])/);
+    });
+
+    it('/([Invesstools])/ realiza match com \'Somos parte do Programa de Formação da Investtools\'', function(){
+        assert.match('Somos parte do Programa de Formação da Investtools', /([Investools])/);
+    });
 });
