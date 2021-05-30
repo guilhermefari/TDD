@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-//const soma1mais1 = require('../mocha').soma1mais1;
+const soma = require('../soma').soma;
 
 describe('Testes', function(){
     it('1 + 1 é igual a 2',function(){
@@ -36,5 +36,31 @@ describe('Testes', function(){
 
     it('/([Invesstools])/ realiza match com \'Somos parte do Programa de Formação da Investtools\'', function(){
         assert.match('Somos parte do Programa de Formação da Investtools', /([Investools])/);
+    });
+
+    //Testes de soma
+    it('1 + 1 deve retornar 2',function(){
+        let result = soma(1,1);
+        assert.equal(result, 2);
+    });
+
+    it('2 + 2 deve retornar 4',function(){
+        let result = soma(2,2);
+        assert.equal(result, 4);
+    });
+
+    it('4 + 5 deve retornar 9',function(){
+        let result = soma(4,5);
+        assert.equal(result, 9);
+    });
+
+    it('6 + 7 deve retornar 13',function(){
+        let result = soma(6,7);
+        assert.equal(result, 13);
+    });
+
+    it('9 + 9 deve retornar 18',function(){
+        let result = soma(9,9);
+        assert.equal(result, 18);
     });
 });

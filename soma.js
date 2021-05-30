@@ -1,5 +1,5 @@
 module.exports = {
-    soma1mais1: function(){
-        return 1+1;
+    soma: function(a,b){
+        return a+b;
     }
 }
